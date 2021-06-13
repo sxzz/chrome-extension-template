@@ -1,33 +1,30 @@
 lockfileVersion: 5.3
 
 specifiers:
-  '@babel/cli': ^7.10.5
-  '@babel/core': ^7.11.4
-  '@babel/plugin-proposal-logical-assignment-operators': ^7.11.0
-  '@babel/plugin-transform-runtime': ^7.11.0
-  '@babel/preset-env': ^7.11.0
-  '@babel/runtime': ^7.11.2
-  '@babel/runtime-corejs3': ^7.11.2
-  '@types/chrome': ^0.0.122
+  '@babel/cli': ^7.14.5
+  '@babel/core': ^7.14.5
+  '@babel/plugin-transform-runtime': ^7.14.5
+  '@babel/preset-env': ^7.14.5
+  '@babel/runtime': ^7.14.5
+  '@types/chrome': ^0.0.145
   babel-eslint: ^10.1.0
-  babel-loader: ^8.1.0
-  copy-webpack-plugin: ^6.0.3
-  core-js: ^3.6.5
-  cross-env: ^7.0.2
-  eslint: ^7.7.0
-  eslint-config-prettier: ^6.11.0
-  eslint-plugin-prettier: ^3.1.4
-  lodash: ^4.17.20
+  babel-loader: ^8.2.2
+  copy-webpack-plugin: ^6.4.1
+  core-js: ^3.14.0
+  cross-env: ^7.0.3
+  eslint: ^7.28.0
+  eslint-config-prettier: ^8.3.0
+  eslint-plugin-prettier: ^3.4.0
+  lodash: ^4.17.21
   pify: ^5.0.0
-  prettier: ^2.1.1
-  proxy-deep: ^3.0.0
-  webpack: ^4.44.1
+  prettier: ^2.3.1
+  proxy-deep: ^3.1.0
+  webpack: ^4.46.0
   webpack-cli: ^3.3.12
   webpack-extension-manifest-plugin: ^0.5.0
   webpack-extension-reloader: ^1.1.4
 
 dependencies:
-  '@babel/runtime-corejs3': 7.14.5
   core-js: 3.14.0
   lodash: 4.17.21
   pify: 5.0.0
@@ -36,18 +33,17 @@ dependencies:
 devDependencies:
   '@babel/cli': 7.14.5_@babel+core@7.14.5
   '@babel/core': 7.14.5
-  '@babel/plugin-proposal-logical-assignment-operators': 7.14.5_@babel+core@7.14.5
   '@babel/plugin-transform-runtime': 7.14.5_@babel+core@7.14.5
   '@babel/preset-env': 7.14.5_@babel+core@7.14.5
   '@babel/runtime': 7.14.5
-  '@types/chrome': 0.0.122
+  '@types/chrome': 0.0.145
   babel-eslint: 10.1.0_eslint@7.28.0
   babel-loader: 8.2.2_802eaa88f56443e8614799ffa818327a
   copy-webpack-plugin: 6.4.1_webpack@4.46.0
   cross-env: 7.0.3
   eslint: 7.28.0
-  eslint-config-prettier: 6.15.0_eslint@7.28.0
-  eslint-plugin-prettier: 3.4.0_9ffac69d7e0f4c6fe45d155d53d9fe41
+  eslint-config-prettier: 8.3.0_eslint@7.28.0
+  eslint-plugin-prettier: 3.4.0_441ef98f5280b4c825fe505e43fc5698
   prettier: 2.3.1
   webpack: 4.46.0_webpack-cli@3.3.12
   webpack-cli: 3.3.12_webpack@4.46.0
@@ -1160,14 +1156,6 @@ packages:
       esutils: 2.0.3
     dev: true
 
-  /@babel/runtime-corejs3/7.14.5:
-    resolution: {integrity: sha512-cBbwXj3F2xjnQJ0ERaFRLjxhUSBYsQPXJ7CERz/ecx6q6hzQ99eTflAPFC3ks4q/IG4CWupNVdflc4jlFBJVsg==}
-    engines: {node: '>=6.9.0'}
-    dependencies:
-      core-js-pure: 3.14.0
-      regenerator-runtime: 0.13.7
-    dev: false
-
   /@babel/runtime/7.14.5:
     resolution: {integrity: sha512-121rumjddw9c3NCQ55KGkyE1h/nzWhU/owjhw0l4mQrkzz4x9SGS1X8gFLraHwX7td3Yo4QTL+qj0NcIzN87BA==}
     engines: {node: '>=6.9.0'}
@@ -1272,8 +1260,8 @@ packages:
       rimraf: 3.0.2
     dev: true
 
-  /@types/chrome/0.0.122:
-    resolution: {integrity: sha512-xHmT1AlBwKAVpQmv+/5gUsB1FXLUiizIZI6bIM52DJDtEhv97FkryHkohjw2HZqAGLOxuJ3kae7YfgWIZ+hMrg==}
+  /@types/chrome/0.0.145:
+    resolution: {integrity: sha512-vLvTMmfc8mvwOZzkmn2UwlWSNu0t0txBkyuIv8NgihRkvFCe6XJX65YZAgAP/RdBit3enhU2GTxCr+prn4uZmA==}
     dependencies:
       '@types/filesystem': 0.0.30
       '@types/har-format': 1.2.6
@@ -2202,11 +2190,6 @@ packages:
       semver: 7.0.0
     dev: true
 
-  /core-js-pure/3.14.0:
-    resolution: {integrity: sha512-YVh+LN2FgNU0odThzm61BsdkwrbrchumFq3oztnE9vTKC4KS2fvnPmcx8t6jnqAyOTCTF4ZSiuK8Qhh7SNcL4g==}
-    requiresBuild: true
-    dev: false
-
   /core-js/3.14.0:
     resolution: {integrity: sha512-3s+ed8er9ahK+zJpp9ZtuVcDoFzHNiZsPbNAAE4KXgrRHbjSqqNN6xGSXq6bq7TZIbKj4NLrLb6bJ5i+vSVjHA==}
     requiresBuild: true
@@ -2478,17 +2461,16 @@ packages:
     engines: {node: '>=10'}
     dev: true
 
-  /eslint-config-prettier/6.15.0_eslint@7.28.0:
-    resolution: {integrity: sha512-a1+kOYLR8wMGustcgAjdydMsQ2A/2ipRPwRKUmfYaSxc9ZPcrku080Ctl6zrZzZNs/U82MjSv+qKREkoq3bJaw==}
+  /eslint-config-prettier/8.3.0_eslint@7.28.0:
+    resolution: {integrity: sha512-BgZuLUSeKzvlL/VUjx/Yb787VQ26RU3gGjA3iiFvdsp/2bMfVIWUVP7tjxtjS0e+HP409cPlPvNkQloz8C91ew==}
     hasBin: true
     peerDependencies:
-      eslint: '>=3.14.1'
+      eslint: '>=7.0.0'
     dependencies:
       eslint: 7.28.0
-      get-stdin: 6.0.0
     dev: true
 
-  /eslint-plugin-prettier/3.4.0_9ffac69d7e0f4c6fe45d155d53d9fe41:
+  /eslint-plugin-prettier/3.4.0_441ef98f5280b4c825fe505e43fc5698:
     resolution: {integrity: sha512-UDK6rJT6INSfcOo545jiaOwB701uAIt2/dR7WnFQoGCVl1/EMqdANBmwUaqqQ45aXprsTGzSa39LI1PyuRBxxw==}
     engines: {node: '>=6.0.0'}
     peerDependencies:
@@ -2500,7 +2482,7 @@ packages:
         optional: true
     dependencies:
       eslint: 7.28.0
-      eslint-config-prettier: 6.15.0_eslint@7.28.0
+      eslint-config-prettier: 8.3.0_eslint@7.28.0
       prettier: 2.3.1
       prettier-linter-helpers: 1.0.0
     dev: true
@@ -2906,11 +2888,6 @@ packages:
       function-bind: 1.1.1
       has: 1.0.3
       has-symbols: 1.0.2
-    dev: true
-
-  /get-stdin/6.0.0:
-    resolution: {integrity: sha512-jp4tHawyV7+fkkSKyvjuLZswblUtz+SQKzSWnBbii16BuZksJlU1wuBYXY75r+duh/llF1ur6oNwi+2ZzjKZ7g==}
-    engines: {node: '>=4'}
     dev: true
 
   /get-value/2.0.6:
@@ -3753,7 +3730,7 @@ packages:
       readable-stream: 2.3.7
       stream-browserify: 2.0.2
       stream-http: 2.8.3
-      string_decoder: 1.1.1
+      string_decoder: 1.3.0
       timers-browserify: 2.0.12
       tty-browserify: 0.0.0
       url: 0.11.0
@@ -4153,7 +4130,7 @@ packages:
     engines: {node: '>= 6'}
     dependencies:
       inherits: 2.0.4
-      string_decoder: 1.1.1
+      string_decoder: 1.3.0
       util-deprecate: 1.0.2
     dev: true
 
@@ -4188,6 +4165,7 @@ packages:
 
   /regenerator-runtime/0.13.7:
     resolution: {integrity: sha512-a54FxoJDIr27pgf7IgeQGxmqUNYrcV338lf/6gH456HZ/PhX+5BcwHXG9ajESmwe6WRO0tAzRUrRmNONWgkrew==}
+    dev: true
 
   /regenerator-transform/0.14.5:
     resolution: {integrity: sha512-eOf6vka5IO151Jfsw2NO9WpGX58W6wWmefK3I1zEGr0lOD0u8rwPaNqQL1aRxUaxLeKO3ArNh3VYg1KbaD+FFw==}
@@ -4636,6 +4614,12 @@ packages:
     resolution: {integrity: sha512-n/ShnvDi6FHbbVfviro+WojiFzv+s8MPMHBczVePfUpDJLwoLT0ht1l4YwBCbi8pJAveEEdnkHyPyTP/mzRfwg==}
     dependencies:
       safe-buffer: 5.1.2
+    dev: true
+
+  /string_decoder/1.3.0:
+    resolution: {integrity: sha512-hkRX8U1WjJFd8LsDJ2yQ/wWWxaopEsABU1XfkM8A+j0+85JAGppt16cr1Whg6KIbb4okU6Mql6BOj+uup/wKeA==}
+    dependencies:
+      safe-buffer: 5.2.1
     dev: true
 
   /strip-ansi/5.2.0:
