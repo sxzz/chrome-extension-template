@@ -1,18 +1,19 @@
-const path = require('path');
-const ExtensionReloader = require('webpack-extension-reloader');
-const CopyWebpackPlugin = require('copy-webpack-plugin');
-const WebpackExtensionManifestPlugin = require('webpack-extension-manifest-plugin');
+import path from 'path';
+import { Configuration } from 'webpack';
+import ExtensionReloader from 'webpack-extension-reloader';
+import CopyWebpackPlugin from 'copy-webpack-plugin';
+import WebpackExtensionManifestPlugin from 'webpack-extension-manifest-plugin';
 
-const manifest = require('../src/manifest.js');
-const pkg = require('../package.json');
+import manifest from '../src/manifest';
+import pkg from '../package.json';
 
 const pathRoot = path.resolve(__dirname, '..');
 const pathSrc = path.resolve(pathRoot, 'src');
 const pathDist = path.resolve(pathRoot, 'dist');
 
-const mode = process.env.NODE_ENV;
+const mode = process.env.NODE_ENV as Configuration['mode'];
 
-module.exports = {
+const config: Configuration = {
   mode,
   devtool: 'inline-source-map',
 
@@ -34,14 +35,14 @@ module.exports = {
     rules: [
       {
         test: /\.js$/,
-        loader: 'babel-loader?cacheDirectory=true',
+        use: { loader: 'babel-loader', options: { cacheDirectory: true } },
         include: [pathSrc],
       },
     ],
   },
 
   resolve: {
-    extensions: ['.js', '.json'],
+    extensions: ['.js', '.json', '.ts'],
     alias: {
       '@': pathSrc,
     },
@@ -57,6 +58,8 @@ module.exports = {
         extend: { version: pkg.version },
       },
     }),
+    // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+    // @ts-ignore
     new ExtensionReloader({
       port: 9090,
       reloadPage: true,
@@ -67,3 +70,5 @@ module.exports = {
     }),
   ],
 };
+
+export default config;

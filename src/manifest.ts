@@ -1,4 +1,4 @@
-module.exports = {
+export default {
   // 清单文件的版本，这个必须写，而且必须是2
   manifest_version: 2,
   // 插件的名称
