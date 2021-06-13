@@ -1,12 +1,6 @@
 module.exports = {
-  parserOptions: {
-    parser: "babel-eslint",
-    ecmaVersion: 2020,
-    sourceType: "module",
-  },
-  extends: ["eslint:recommended", "plugin:prettier/recommended"],
-
   root: true,
+  extends: ['eslint:recommended', 'plugin:prettier/recommended'],
   env: {
     browser: true,
     es6: true,
@@ -16,10 +10,14 @@ module.exports = {
   globals: {
     _: true,
   },
-
+  parserOptions: {
+    parser: 'babel-eslint',
+    ecmaVersion: 2020,
+    sourceType: 'module',
+  },
   rules: {
-    "no-unused-vars": "off",
-    "no-empty": "warn",
-    "no-debugger": "warn",
+    'no-unused-vars': 'off',
+    'no-empty': 'warn',
+    'no-debugger': 'warn',
   },
 };

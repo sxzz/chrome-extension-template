@@ -11,18 +11,17 @@ yarn install
 yarn dev
 ```
 
-
 ## Examples
 
 ```javascript
 import chrome from './lib/chromeProxy';
 
 const [cookies] = await chrome.cookies.getAll({
-url: 'https://www.google.com/',
+  url: 'https://www.google.com/',
 });
 console.log(cookies);
 
-chrome.cookies.onChanged.addListener(changeInfo => console.log(changeInfo)); 
+chrome.cookies.onChanged.addListener(changeInfo => console.log(changeInfo));
 ```
 
 ## Reference
